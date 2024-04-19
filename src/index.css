@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-6xl font-extrabold bg-line-stroke w-fit;
+  }
+  h2 {
+    @apply text-5xl font-extrabold;
+  }
+  h3 {
+    @apply text-4xl font-extrabold;
+  }
+  h4 {
+    @apply text-2xl font-extrabold;
+  }
+  h5 {
+    @apply text-lg font-extrabold;
+  }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.section-wrapper {
+  @apply px-4 lg:px-10 max-w-7xl mx-auto;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.ant-modal-title {
+  @apply text-xl font-bold !important;
+}
+
+.bg-line-stroke {
+  background-image: url("../src/assets/line-stroke/image.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
